@@ -141,7 +141,7 @@ int main(int argc, char *argv[]) {
 
         input = argv[1];
 
-        for (size_t count = 0; count < sizeof input_hex/sizeof *input_hex; count++) {
+        for (size_t count = 0; count < sizeof(input_hex) / sizeof(*input_hex); count++) {
             sscanf(input, "%2hhx", &input_hex[count]);
             input += 2;
         }
@@ -155,7 +155,7 @@ int main(int argc, char *argv[]) {
         algorithm = argv[1];
         input = argv[2];
 
-        for (size_t count = 0; count < sizeof input_hex/sizeof *input_hex; count++) {
+        for (size_t count = 0; count < sizeof(input_hex) / sizeof(*input_hex); count++) {
             sscanf(input, "%2hhx", &input_hex[count]);
             input += 2;
         }
